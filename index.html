@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    <title>Market - Groceries Delivered in Minutes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>Mark<span>et</span></h1>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Deliver to: Haliyal 581356</span>
+                </div>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for products...">
+                </div>
+                <div class="user-actions">
+                    <a id="login-btn"><i class="fas fa-user"></i> Sign In</a>
+                    <a id="cart-btn"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a>
+                </div>
+            </div>
+        </div>
+        
+        <nav>
+            <div class="container">
+                <ul class="categories">
+                    <li><a href="#">Fruits & Vegetables</a></li>
+                    <li><a href="#">Dairy & Breakfast</a></li>
+                    <li><a href="#">Munchies</a></li>
+                    <li><a href="#">Cold Drinks & Juices</a></li>
+                    <li><a href="#">Instant & Frozen Food</a></li>
+                    <li><a href="#">Tea, Coffee & Health Drinks</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Groceries Delivered in 10 Minutes</h2>
+            <p>Get your favorite groceries delivered to your doorstep in record time. Fresh, fast, and reliable.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h2 class="section-title">Popular Products</h2>
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/apple.webp" alt="Fresh Apples" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Fresh Apples - 500g</h3>
+                    <p class="product-price">₹149</p>
+                    <div class="product-action">
+                        <button class="add-to-cart" data-id="1" data-name="Fresh Apples" data-price="149" data-img="images/apple.webp">Add to Cart</button>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/banana.jpg" alt="Organic Bananas" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Organic Bananas - 1kg</h3>
+                    <p class="product-price">₹89</p>
+                    <div class="product-action">
+                        <button class="add-to-cart" data-id="2" data-name="Organic Bananas" data-price="89" data-img="images/banana.jpg">Add to Cart</button>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/image.png" alt="Frutes" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Fresh Milk - 1L</h3>
+                    <p class="product-price">₹65</p>
+                    <div class="product-action">
+                        <button class="add-to-cart" data-id="3" data-name="Fresh Milk" data-price="65" data-img="images/image.png">Add to Cart</button>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/xWhole-Grain-vs-Whole-Wheat-Bread-Whats-the-Difference-6a6b765b9e8944b290a1ddb35d6a683a.jpg" alt="Whole Wheat Bread" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Whole Wheat Bread - 400g</h3>
+                    <p class="product-price">₹55</p>
+                    <div class="product-action">
+                        <button class="add-to-cart" data-id="4" data-name="Whole Wheat Bread" data-price="55" data-img="images/xWhole-Grain-vs-Whole-Wheat-Bread-Whats-the-Difference-6a6b765b9e8944b290a1ddb35d6a683a.jpg">Add to Cart</button>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="images/Box 1L fresh fruit orange .jpg" alt="Orange Juice" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Fresh Orange Juice - 1L</h3>
+                    <p class="product-price">₹180</p>
+                    <div class="product-action">
+                        <button class="add-to-cart" data-id="5" data-name="Fresh Orange Juice" data-price="180" data-img="images/Box 1L fresh fruit orange .jpg">Add to Cart</button>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="images/65ec422093e79558616d812e-balaji-simply-salted-salted-potato.jpg" alt="Potato Chips" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Potato Chips - 150g</h3>
+                    <p class="product-price">₹50</p>
+                    <div class="product-action">
+                        <button class="add-to-cart" data-id="6" data-name="Potato Chips" data-price="50" data-img="images/65ec422093e79558616d812e-balaji-simply-salted-salted-potato.jpg">Add to Cart</button>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="images/0bf028f7-3fa5-4f71-9d69-8b5e93c16392.avif" alt="Yogurt" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Greek Yogurt - 200g</h3>
+                    <p class="product-price">₹80</p>
+                    <div class="product-action">
+                        <button class="add-to-cart" data-id="7" data-name="Greek Yogurt" data-price="80" data-img="images/0bf028f7-3fa5-4f71-9d69-8b5e93c16392.avif">Add to Cart</button>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="images/65ec422093e79558616d812e-balaji-simply-salted-salted-potato.jpg" alt="Chocolate Bar" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Dark Chocolate - 100g</h3>
+                    <p class="product-price">₹120</p>
+                    <div class="product-action">
+                        <button class="add-to-cart" data-id="8" data-name="Dark Chocolate" data-price="120" data-img="images/65ec422093e79558616d812e-balaji-simply-salted-salted-potato.jpg">Add to Cart</button>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">Daily Essentials</h2>
+        <div class="products">
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="images/nutri-bio.webp" alt="Eggs" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Farm Eggs - 6 pcs</h3>
+                    <p class="product-price">₹70</p>
+                    <div class="product-action">
+                        <button class="add-to-cart" data-id="9" data-name="Farm Eggs" data-price="70" data-img="images/nutri-bio.webp">Add to Cart</button>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 10 -->
+            <div class="product-card">
+                <img src="images/dark.jpg" alt="Brown Bread" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Brown Bread - 400g</h3>
+                    <p class="product-price">₹60</p>
+                    <div class="product-action">
+                        <button class="add-to-cart" data-id="10" data-name="Brown Bread" data-price="60" data-img="images/dark.jpg">Add to Cart</button>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 11 -->
+            <div class="product-card">
+                <img src="images/grocerapp-fresh-eggs-half-dozen-65ac6f32bb834.jpeg" alt="Pasta" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Whole Wheat Pasta - 500g</h3>
+                    <p class="product-price">₹95</p>
+                    <div class="product-action">
+                        <button class="add-to-cart" data-id="11" data-name="Whole Wheat Pasta" data-price="95" data-img="images/grocerapp-fresh-eggs-half-dozen-65ac6f32bb834.jpeg">Add to Cart</button>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 12 -->
+            <div class="product-card">
+                <img src="images/white.png" alt="Olive Oil" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Extra Virgin Olive Oil - 500ml</h3>
+                    <p class="product-price">₹450</p>
+                    <div class="product-action">
+                        <button class="add-to-cart" data-id="12" data-name="Extra Virgin Olive Oil" data-price="450" data-img="images/white.png">Add to Cart</button>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Market</h3>
+                    <p>Groceries delivered in minutes</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Praveenggouda"><i class="fab fa-github"></i></a>
+                       
+                        <a href="https://www.instagram.com/impraveengouda/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/praveen-gouda-20a359263/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Fruits & Vegetables</a></li>
+                        <li><a href="#">Dairy & Breakfast</a></li>
+                        <li><a href="#">Munchies</a></li>
+                        <li><a href="#">Cold Drinks & Juices</a></li>
+                        <li><a href="#">Instant & Frozen Food</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Karnataka, India</li>
+                        <li><i class="fas fa-phone"></i> +91 8431878531</li>
+                        <li><i class="fas fa-envelope"></i> praveengouda31@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Market. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-login">&times;</span>
+            <h2 class="modal-title">Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Login</button>
+                <div class="form-footer">
+                    <p>Don't have an account? <a id="show-register">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-register">&times;</span>
+            <h2 class="modal-title">Register</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Register</button>
+                <div class="form-footer">
+                    <p>Already have an account? <a id="show-login">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-container" id="cart-sidebar">
+        <div class="cart-header">
+            <h2 class="cart-title">Your Cart</h2>
+            <span class="close-cart" id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart-message">
+                <i class="fas fa-shopping-cart" style="font-size: 48px; margin-bottom: 15px;"></i>
+                <p>Your cart is empty</p>
+                <p>Start adding items to see them here</p>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">₹0</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+<script src="script.js">
+    
+</script>
